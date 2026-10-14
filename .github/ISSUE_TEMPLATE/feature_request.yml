@@ -1,0 +1,55 @@
+name: Feature request
+description: Suggest a focused improvement to the website or product concept.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Strong proposals connect a clear user need to a practical outcome for manufacturers, distributors, or protected consumers.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Who has the problem, and why does it matter?
+      placeholder: Describe the user, business, or consumer-protection need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Explain the experience or capability you would like to see.
+      placeholder: Describe the proposed behavior, content, or workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches or workarounds have you considered?
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      options:
+        - Manufacturer
+        - Distributor
+        - Retailer or installer
+        - Consumer
+        - Internal operator
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting context
+      description: Add research, examples, sketches, screenshots, or relevant sources.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Definition of success
+      description: How would we know this feature is working well?
+      placeholder: List observable outcomes or acceptance criteria.

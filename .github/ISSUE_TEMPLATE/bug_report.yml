@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a reproducible problem with the website or development workflow.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve CounterfeitShield Africa. Please avoid including secrets, private customer data, or sensitive supply-chain information.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen.
+      placeholder: Tell us what went wrong and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence of steps.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Affected page or route
+      placeholder: / or the relevant page URL
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Production / deployed site
+        - Local development
+        - GitHub Actions build
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 130, Safari 18, Firefox 132, etc.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, logs, or additional context
+      description: Add screenshots or relevant console/build output. Remove sensitive information first.
