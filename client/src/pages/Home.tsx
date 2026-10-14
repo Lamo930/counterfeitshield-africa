@@ -25,8 +25,8 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 
-const HERO_IMAGE = "/manus-storage/counterfeitshield-hero_fe7543f8.png";
-const LOGO_IMAGE = "/manus-storage/counterfeitshield-logo_d47bb5b0.png";
+const HERO_IMAGE = `${import.meta.env.BASE_URL}assets/counterfeitshield-hero.webp`;
+const LOGO_IMAGE = `${import.meta.env.BASE_URL}assets/counterfeitshield-logo.webp`;
 
 const products = {
   medicines: {
